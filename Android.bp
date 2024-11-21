@@ -239,6 +239,12 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "libaudioproxy_shim",
+    srcs: ["libaudioproxy/libaudioproxy_shim.cpp"],
+    proprietary: true,
+}
+
+cc_library_shared {
     name: "libavservices_minijail_vendor",
     shared_libs: ["libavservices_minijail"],
     vendor: true,
